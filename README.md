@@ -1,25 +1,19 @@
 # Markdown Structure Generator
 
-A lightweight utility that generates a clean Markdown representation of a project's file and folder structure.
+A lightweight utility that automatically generates a clean Markdown representation of a project's file and folder structure.
 
-Perfect for:
-
-* GitHub repositories
-* Documentation
-* Project overviews
-* Portfolio projects
-* Sharing repository structures
+Perfect for GitHub repositories, documentation, project overviews, and developer portfolios.
 
 ## Features
 
-* Generates a visual tree structure
-* Outputs directly to `structure.md`
-* Supports `.gitignore` filtering
-* Ignores common unnecessary folders
-* Works as both a Python script and a standalone executable
-* UTF-8 support
 * Recursive directory scanning
+* Clean Markdown output
+* Optional `.gitignore` support
+* Automatic filtering of common unnecessary folders
 * Folder and file statistics
+* UTF-8 support
+* Works as both a Python script and standalone executable
+* Simple interactive interface
 
 ## Example Output
 
@@ -28,62 +22,71 @@ Perfect for:
 ├── 📁 src/
 │   ├── 📄 main.py
 │   └── 📄 utils.py
-├── 📁 docs/
-│   └── 📄 guide.md
+├── 📁 assets/
+│   └── 📄 logo.png
 ├── 📄 README.md
 └── 📄 requirements.txt
 ```
 
 ## Installation
 
-### Option 1: Download Release
+### Executable
 
-Download the latest executable from the Releases page and run it.
+Download the latest release and run:
 
-### Option 2: Run from Source
+```text
+MarkdownStructureGenerator.exe
+```
+
+### Python
 
 ```bash
-git clone <repository-url>
-cd markdown-structure-generator
-python generate_structure.py
+git clone https://github.com/yourusername/MarkdownStructureGenerator.git
+cd MarkdownStructureGenerator
+python generate.py
 ```
 
 ## Usage
 
-Run the program:
+Launch the program:
 
 ```bash
-python generate_structure.py
+python generate.py
 ```
 
 or
 
 ```bash
-generate_structure.exe
+MarkdownStructureGenerator.exe
 ```
 
 The program will ask:
 
-* Which folder to scan
-* Whether `.gitignore` rules should be respected
+1. Which folder to scan
+2. Whether `.gitignore` should be respected
 
-After scanning, a `structure.md` file will be generated.
+A `structure.md` file will then be generated automatically.
 
 ## Roadmap
 
-Planned features:
+### v0.2.0-beta
 
 * Custom output filename
 * Maximum depth option
-* JSON export
-* Plain text export
 * Hidden file support
 * Command-line arguments
-* Faster scanning for large repositories
+
+### Future
+
+* JSON export
+* TXT export
+* GUI version
+* Drag-and-drop support
+* Repository analysis statistics
 
 ## Version
 
-Current Release: v0.1.0-beta
+Current version: **v0.1.0-beta**
 
 ## License
 
@@ -91,4 +94,4 @@ MIT License
 
 ## Author
 
-Created by Abhijit A. Mishra
+Made by Nokqrii
