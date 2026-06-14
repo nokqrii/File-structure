@@ -1,4 +1,3 @@
-````python
 from pathlib import Path
 import fnmatch
 import sys
@@ -296,4 +295,3 @@ Generated from:
 
 if __name__ == "__main__":
     main()
-````
