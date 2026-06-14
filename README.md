@@ -120,7 +120,7 @@ MIT License
 
 ## Author
 
-Abhijit A. Mishra
+Nokqrii
 
 ## Contributing
 
