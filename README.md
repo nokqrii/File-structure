@@ -1,47 +1,68 @@
 # Markdown Structure Generator
 
-A lightweight utility that automatically generates a clean Markdown representation of a project's file and folder structure.
+Generate clean Markdown representations of directory and repository structures directly from the command line.
 
-Perfect for GitHub repositories, documentation, project overviews, and developer portfolios.
+## Overview
+
+Markdown Structure Generator is a lightweight utility designed for developers who want to quickly document project structures for GitHub repositories, documentation, portfolio projects, bug reports, and discussions.
+
+The tool recursively scans a directory and generates a visual tree structure in Markdown format.
 
 ## Features
 
 * Recursive directory scanning
-* Clean Markdown output
+* Clean Markdown tree generation
+* Automatic `structure.md` creation
 * Optional `.gitignore` support
-* Automatic filtering of common unnecessary folders
-* Folder and file statistics
+* File and folder statistics
+* Automatic filtering of common development folders
 * UTF-8 support
-* Works as both a Python script and standalone executable
-* Simple interactive interface
+* Standalone Windows executable
+* No dependencies required when using the executable
 
-## Example Output
+## Example
 
-```text
+Input:
+
+```text id="24q4ic"
+MyProject/
+├── src/
+├── docs/
+├── README.md
+└── requirements.txt
+```
+
+Generated output:
+
+```text id="gng6rz"
+# Project Structure
+
+## Statistics
+
+- Folders: 2
+- Files: 2
+
 .
 ├── 📁 src/
-│   ├── 📄 main.py
-│   └── 📄 utils.py
-├── 📁 assets/
-│   └── 📄 logo.png
+├── 📁 docs/
 ├── 📄 README.md
 └── 📄 requirements.txt
 ```
 
 ## Installation
 
-### Executable
+### Download Executable
 
-Download the latest release and run:
+Download the latest release from the Releases section and run:
 
-```text
+```text id="y4lzlg"
 MarkdownStructureGenerator.exe
 ```
 
-### Python
+### Run From Source
 
-```bash
-git clone https://github.com/yourusername/MarkdownStructureGenerator.git
+```bash id="o3mjlwm"
+git clone https://github.com/YOUR_USERNAME/MarkdownStructureGenerator.git
 cd MarkdownStructureGenerator
 python generate.py
 ```
@@ -50,43 +71,48 @@ python generate.py
 
 Launch the program:
 
-```bash
+```bash id="l7n7m5"
 python generate.py
 ```
 
 or
 
-```bash
+```bash id="hclu2q"
 MarkdownStructureGenerator.exe
 ```
 
-The program will ask:
+The program will:
 
-1. Which folder to scan
-2. Whether `.gitignore` should be respected
+1. Ask for a target folder
+2. Ask whether `.gitignore` should be respected
+3. Scan the directory
+4. Generate a `structure.md` file
 
-A `structure.md` file will then be generated automatically.
+## Ignored Directories
 
-## Roadmap
+By default, common development directories are excluded:
 
-### v0.2.0-beta
+```text id="gaj7ki"
+.git
+__pycache__
+.venv
+venv
+.env
+node_modules
+.idea
+.vscode
+dist
+build
+```
+
+## Planned Features
 
 * Custom output filename
-* Maximum depth option
-* Hidden file support
-* Command-line arguments
-
-### Future
-
+* Maximum scan depth
 * JSON export
 * TXT export
-* GUI version
-* Drag-and-drop support
-* Repository analysis statistics
-
-## Version
-
-Current version: **v0.1.0-beta**
+* Command-line arguments
+* Clipboard support
 
 ## License
 
@@ -94,4 +120,8 @@ MIT License
 
 ## Author
 
-Made by Nokqrii
+Abhijit A. Mishra
+
+## Contributing
+
+Issues, suggestions, and pull requests are welcome.
