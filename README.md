@@ -62,7 +62,7 @@ MarkdownStructureGenerator.exe
 ### Run From Source
 
 ```bash id="o3mjlwm"
-git clone https://github.com/YOUR_USERNAME/MarkdownStructureGenerator.git
+git clone https://github.com/nokqrii/MarkdownStructureGenerator.git
 cd MarkdownStructureGenerator
 python generate.py
 ```
