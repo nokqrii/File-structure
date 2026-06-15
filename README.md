@@ -5,7 +5,7 @@ Generate clean Markdown representations of directory and repository structures d
 
 ## Overview
 
-Markdown Structure Generator is a lightweight utility designed for developers who want to quickly document project structures for GitHub repositories, documentation, portfolio projects, bug reports, and discussions.
+Markdown Structure Generator is a lightweight utility designed for developers who want to quickly document project structures for GitHub repositories, documentation, portfolio projects, bug reports and discussions
 
 The tool recursively scans a directory and generates a visual tree structure in Markdown format.
 
@@ -125,4 +125,4 @@ Nokqrii
 
 ## Contributing
 
-Issues, suggestions, and pull requests are welcome.
+Issues, suggestions and pull requests are welcome.
