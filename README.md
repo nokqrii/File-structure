@@ -60,14 +60,6 @@ Download the latest release from the Releases section and run:
 MarkdownStructureGenerator.exe
 ```
 
-### Run From Source
-
-```bash id="o3mjlwm"
-git clone https://github.com/nokqrii/MarkdownStructureGenerator.git
-cd MarkdownStructureGenerator
-python generate.py
-```
-
 ## Usage
 
 Launch the program:
