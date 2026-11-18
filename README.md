@@ -1,4 +1,5 @@
 <img width="1919" height="1003" alt="image" src="https://github.com/user-attachments/assets/6067221d-b37a-459f-b979-d445860ccd71" />
+
 # Markdown Structure Generator
 
 Generate clean Markdown representations of directory and repository structures directly from the command line.
